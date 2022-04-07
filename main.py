@@ -57,7 +57,7 @@ async def Subscribe(lel, message):
          await app.send_message(chat_id=message.chat.id, text="**Please Join My Updates Channel To Use Me!\n and click on to Check /start**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
          return 1
       except Exception:
-         await app.send_message(chat_id=message.chat.id, text="**Something Went Wrong. Contact My [Support Group](https://t.me/HirasetTR).**", parse_mode="markdown", disable_web_page_preview=True)
+         await app.send_message(chat_id=message.chat.id, text="**🛑🇹🇷[ᴀɪʟᴇᴍıᴢᴇ ꜱᴇɴᴅᴇ ᴋᴀᴛıʟ ☞︎︎](https://t.me/HirasetTR)🇹🇷🇹🇷.**", parse_mode="markdown", disable_web_page_preview=True)
          return 1
 
 
