@@ -13,7 +13,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 def start() -> scoped_session:
-    engine = create_engine("postgres://ykfmxfem:Pm3VDsQXsWt8c0hbaPUYdM9bGNgtMPjl@fanny.db.elephantsql.com/mytdp47sql", client_encoding="utf8")   
+    engine = create_engine("mongodb+srv://vai:vai@cluster0.py47r.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")   
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
