@@ -31,7 +31,7 @@ API_HASH = "f43cdf13b9fec8e3da3c3a50397bad68"
 BOT_TOKEN = "5104889810:AAGbWzgzD9pPt7XqjHhAJbwahA99ASX6a4I"
 UPDATES_CHANNEL = "hiraset"
 OWNER= [2028948832]
-PREMIUM=[2028948832]
+PREMIUM=[]
 app = pyrogram.Client("app", api_id=APP_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 with open("data.csv", encoding='UTF-8') as f:
