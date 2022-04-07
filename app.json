@@ -1,0 +1,56 @@
+{
+    "name": "Myt üye ekleme",
+    "description": "üye ekleme botudur.",
+    "logo": "https://telegra.ph/file/d92458c5f05e8588b7dab.jpg",
+    "keywords": [
+        "Meyit üye",
+        "Ekle bakim",
+        "Meyitzade",
+        "Üye ekleme",
+        "Meryemuzerli"
+    ],
+    "repository": "https://github.com/01-Meyitzade-01/meyitbot",
+    "success_url": "hhtps://t.me/meyitzade47",
+    "image": "heroku/python",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Get it from @botfather ..",
+            "value": "5104889810:AAGbWzgzD9pPt7XqjHhAJbwahA99ASX6a4I",
+            "required": true
+        },
+        "API_ID": {
+            "description": "api id alın my.telegram.org",
+            "value": "11044555",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "api hash alın my.telegram.org",
+            "value": "f43cdf13b9fec8e3da3c3a50397bad68",
+            "required": true
+        },
+        "UPDATES_CHANNEL": {
+            "description": "Güncelleme kanalını ver."
+            "value": "Hiraset",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "Sahip id",
+            "value": "2028948832",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
